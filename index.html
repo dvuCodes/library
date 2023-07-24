@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" type="text/css" />
+    <title>Library</title>
+  </head>
+  <body>
+    <header>
+      <div class="header-container">
+        <h1>Book Library</h1>
+        <button>Log In</button>
+      </div>
+    </header>
+
+    <main>
+      <article class="main-container">
+        <button class="new-book-btn" id="new-book-btn">NEW BOOK</button>
+        <section class="book-display-containers">
+          <h2>Your Books</h2>
+          <div class="stored-books" id="stored-books">
+
+            </div>
+          </div>
+        </section>
+      </article>
+
+      <aside class="form-container" id="form">
+        <h3>Add a new book</h3>
+        <form>
+          <input type="text" placeholder="Author" name="author" id="author" />
+
+          <input type="text" placeholder="Title" name="title" id="title" />
+
+          <input
+            type="numer"
+            placeholder="Number of pages"
+            name="pages"
+            id="pages"
+          />
+          <div class="checkbox-wrapper">
+            <label for="read">Have you read this?</label>
+            <input
+              type="checkbox"
+              name="read"
+              class="checkbox-input"
+              id="checkbox-input"
+            />
+          </div>
+
+          <button type="submit" id="form-submit-btn">Submit</button>
+        </form>
+      </aside>
+    </main>
+    <footer>
+      <div class="footer-container"><h4>CopyRight Dat Vu</h4></div>
+    </footer>
+    <script src="./script.js" type="module"></script>
+  </body>
+</html>
